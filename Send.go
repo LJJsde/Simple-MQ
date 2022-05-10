@@ -41,8 +41,8 @@ func (receiver *MyMQ) Size() int {
 	return len(receiver.Message)
 }
 
-func (i *MyMQ) Capacity() int {
-	return i.cap
+func (receiver *MyMQ) Capacity() int {
+	return receiver.cap
 }
 
 func CreateMQ(capacity int) MQ {
@@ -53,6 +53,3 @@ func CreateMQ(capacity int) MQ {
 	return mq
 }
 
-func main() {
-
-}
