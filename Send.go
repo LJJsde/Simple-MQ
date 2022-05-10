@@ -53,3 +53,10 @@ func CreateMQ(capacity int) MQ {
 	return mq
 }
 
+func main() {
+	var mq MyMQ
+	info := 111
+	mq.Message <- info
+	mq.Res(10, 1)
+
+}
